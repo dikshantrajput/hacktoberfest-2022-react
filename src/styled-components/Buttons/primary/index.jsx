@@ -1,7 +1,7 @@
 import React from 'react'
 import './index.css'
 
-function PrinmaryButton({text, link, external = false}) {
+function PrimaryButton({text, link, external = false}) {
   return (
     <button className='primary__button'>
       <a href={link} target={`${external ? '__dk' : ''}`}>
@@ -11,4 +11,4 @@ function PrinmaryButton({text, link, external = false}) {
   )
 }
 
-export default PrinmaryButton
+export default PrimaryButton

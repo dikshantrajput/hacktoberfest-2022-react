@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import PrinmaryButton from '../Buttons/primary'
+import PrimaryButton from '../Buttons/primary'
 import './index.css'
 
 function RepoCard({title, body, btnText, btnLink}) {
@@ -15,7 +15,7 @@ function RepoCard({title, body, btnText, btnLink}) {
         <div className="card__body">
           {body}
         </div>
-        <PrinmaryButton link={btnLink} text={btnText} external={true} />
+        <PrimaryButton link={btnLink} text={btnText} external={true} />
       </div>
     </>
   )
