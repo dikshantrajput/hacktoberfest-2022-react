@@ -10,6 +10,14 @@
     },
     {
       "id":2,
+      "title":"Hacktoberfest-accepted-2022",
+      "body":"This repository is for everyone who wants to participate in Hacktoberfest 2022. Anyone can contribute/add quality code or projects for your Swags (T- Shirt), must be relevant that can add some value to this repository. You will become the contributor and will get hall of fame here.",
+      "redirectTo":"https://github.com/dikshantrajput/Hacktoberfest-accepted-2022",
+      "username":"dikshantrajput",
+      "reponame":"Hacktoberfest-accepted-2022"
+    },
+    {
+      "id":3,
       "title":"Hacktoberfest2022-for-everyone",
       "body":"This repository is for everyone who wants to participate in Hacktoberfest 2022. Anyone can contribute/add quality code or projects for your Swags (T- Shirt), must be relevant that can add some value to this repository. You will become the contributor and will get hall of fame here.",
       "redirectTo":"https://github.com/maheshjainckd/Hacktoberfest2022-for-everyone",
