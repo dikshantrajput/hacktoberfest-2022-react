@@ -1,0 +1,20 @@
+.secondary__button{
+  background: var(--cyan-color);
+  border: 1px solid var(--cyan-color);
+  padding: 0.30rem;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.secondary__button{
+  color: var(--black-color);
+}
+
+.secondary__button:hover{
+  background: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.secondary__button:hover{
+  color: var(--white-color);
+}

@@ -1,0 +1,20 @@
+{
+  "repos":[
+    {
+      "id":1,
+      "title":"Hacktoberfest2022-react",
+      "body":"This repository is for everyone who wants to participate in Hacktoberfest 2022 in react stack. Anyone can contribute/add quality code or projects for your Swags (T- Shirt), must be relevant that can add some value to this repository. You will become the contributor and will get hall of fame here.",
+      "redirectTo":"https://github.com/dikshantrajput/hacktoberfest-2022-react",
+      "username":"dikshantrajput",
+      "reponame":"hacktoberfest-2022-react"
+    },
+    {
+      "id":2,
+      "title":"Hacktoberfest2022-for-everyone",
+      "body":"This repository is for everyone who wants to participate in Hacktoberfest 2022. Anyone can contribute/add quality code or projects for your Swags (T- Shirt), must be relevant that can add some value to this repository. You will become the contributor and will get hall of fame here.",
+      "redirectTo":"https://github.com/maheshjainckd/Hacktoberfest2022-for-everyone",
+      "username":"maheshjainckd",
+      "reponame":"Hacktoberfest2022-for-everyone"
+    }
+  ]  
+}

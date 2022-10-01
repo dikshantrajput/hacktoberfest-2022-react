@@ -1,0 +1,14 @@
+.repo__name{
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.load__more__container{
+  width: 100%;
+  text-align: right;
+  margin: 2rem 0;
+}
+
+.load__more__container button{
+  font-size: 1.05rem;
+}

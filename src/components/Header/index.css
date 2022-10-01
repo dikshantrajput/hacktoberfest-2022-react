@@ -1,0 +1,31 @@
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  box-shadow: 0px 2px 4px 0px var(--shadow-color);
+  margin-bottom: 1rem;
+}
+
+.brand__container a, .header__nav__list__item a{
+  color: var(--white-color);
+  font-size: 1.1rem;
+}
+
+header nav{
+  flex: 0.5;
+}
+
+.header__nav__list{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header__nav__list__item a{
+  font-size: 0.9rem;
+}
+
+.brand__container a:hover, .header__nav__list__item a:hover{
+  color: var(--cyan-color);
+}

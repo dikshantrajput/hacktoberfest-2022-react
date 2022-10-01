@@ -1,0 +1,10 @@
+.app__container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+.body__container > div{
+  padding: 1rem;
+}
