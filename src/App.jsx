@@ -6,20 +6,22 @@ import {
 } from "react-router-dom";
 import Home from "./components/Home";
 import Contributors from "./components/Contributors";
-import './app.css'
-
+import './app.css';
+import{useSelector} from 'react-redux'
 function App() {
+  const mode = useSelector((state) => state.mode.value);
+  console.log(mode);
   return (
-    <div className='app__container'>
+    <div className={mode ? "app__container" : "app_container_light"}>
       <div className="body__container">
-        <Header/>
-          <Routes>
-            <Route path='/' element={<Home/>} />
-            <Route path='/contributors' element={<Contributors/>} />
-          </Routes>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contributors" element={<Contributors />} />
+        </Routes>
       </div>
-      <div className='footer__container'>
-        <Footer/>
+      <div className="footer__container">
+        <Footer />
       </div>
     </div>
   );

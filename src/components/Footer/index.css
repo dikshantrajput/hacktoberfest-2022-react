@@ -1,9 +1,13 @@
 footer{
   padding: 1rem;
-  box-shadow: 0px -2px 5px 0px var(--shadow-color);
   margin-top: 1rem;
 }
-
+.footer__light{
+  box-shadow: 0px -2px 5px 0px var(--black-color);
+}
+.footer__dark{
+  box-shadow: 0px -2px 5px 0px var(--shadow-color);
+}
 a {
   color: #34c0eb;
   padding-right: 20px;
