@@ -1,22 +1,22 @@
-.primary__button{
+.primary__button {
   background: var(--secondary-color);
   border: 1px solid var(--secondary-color);
   padding: 0.30rem;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
-.primary__button a{
+.primary__button a {
   color: var(--white-color);
   font-size: 1.03rem;
   margin-left: 9%;
 }
 
-.primary__button:hover{
+.primary__button:hover {
   background: var(--cyan-color);
   cursor: pointer;
   transition: all 0.2s;
 }
 
-.primary__button:hover a{
+.primary__button:hover a {
   color: var(--black-color);
 }
