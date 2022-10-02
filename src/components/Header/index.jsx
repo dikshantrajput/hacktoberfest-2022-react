@@ -7,7 +7,7 @@ function Header() {
     <header>
       <div className='brand__container'>
         <Link to='/'>
-          Hactoberfest React
+          HACKTOBERFEST REACT
         </Link>
       </div>
       <nav>

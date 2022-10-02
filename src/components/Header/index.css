@@ -9,7 +9,8 @@ header{
 
 .brand__container a, .header__nav__list__item a{
   color: var(--white-color);
-  font-size: 1.1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 header nav{
