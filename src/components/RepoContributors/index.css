@@ -13,3 +13,14 @@
 .load__more__container button{
   font-size: 1.05rem;
 }
+.contributor__container {
+  display: flex;
+  justify-content: flex-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contributor__container::after {
+  content: "";
+  flex: auto;
+}

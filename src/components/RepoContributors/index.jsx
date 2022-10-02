@@ -28,21 +28,24 @@ function RepoContributors({repo}) {
   
   return (
     <div>
-      <h2 className='repo__name'>
-        {repo?.reponame}
-      </h2>
-      {
-        contributors.map((contributor)=>{
-          return <ContributorCard key={contributor.id} contributor={contributor} />
-        })
-      }
-      {
-        loadMore && <div className='load__more__container'>
-          <SecondaryButton text={"Load More"} clickEvent={loadMoreContributors} />
+      <h2 className="repo__name">{repo?.reponame}</h2>
+      <div className="contributor__container">
+        {contributors.map((contributor) => {
+          return (
+            <ContributorCard key={contributor.id} contributor={contributor} />
+          );
+        })}
+      </div>
+      {loadMore && (
+        <div className="load__more__container">
+          <SecondaryButton
+            text={'Load More'}
+            clickEvent={loadMoreContributors}
+          />
         </div>
-      }
+      )}
     </div>
-  )
+  );
 }
 
 export default RepoContributors
