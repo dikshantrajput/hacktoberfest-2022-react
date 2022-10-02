@@ -10,7 +10,8 @@ header{
 box-shadow: 0px 2px 4px 0px var(--shadow-color);
 }
 .header__light{
-  box-shadow: 0px 2px 4px 0px var(--black-color);
+  /* box-shadow: 0px 2px 4px 0px var(--black-color); */
+  box-shadow: 0px 3px 7px 0px #355764;
 }
 .brand__container a, .header__nav__list__item a{
   color: var(--white-color);
@@ -19,6 +20,12 @@ box-shadow: 0px 2px 4px 0px var(--shadow-color);
 .brand__container__light a, .header__nav__list__item__light a{
   color: var(--black-color);
   font-size: 1.1rem;
+  /* Added Font Weight */
+  font-weight: 600;
+}
+
+span{
+  font-weight: 600;
 }
 
 
