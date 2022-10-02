@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminPage - FreshBite</title>
+    <link rel="stylesheet" href="../css_files/AdminPage.css" type="text/css">
+    <link rel="icon" href="../favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <section id="UserPage">
+        <nav>
+            <img class="ctn-logo" src="../media/canteen-logo-1v2.jpg" alt="ctn-logo">
+            <h3 class="ctn-name">Fresh <span><br /></span> Bite</h3>
+            <div id="sideNav">
+                <ul class="nav-list">
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="#">Orders</a></li>
+                    <li><a href="#">Receivable</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Sign out</a></li>
+                </ul>
+            </div>
+            <div class="menu2" id="menu2">
+                <div>
+                    <span class="line-1"></span>
+                    <span class="line-2"></span>
+                    <span class="line-3"></span>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <script>
+        var menu2 = document.getElementById("menu2");
+        var sideNav = document.getElementById("sideNav");
+
+        sideNav.style.right = "-250px";
+
+        menu2.onclick = function () {
+            if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+                menu2.classList.toggle("openmenu2");
+            }
+            else {
+                sideNav.style.right = "-250px";
+                menu2.classList.toggle("openmenu2");
+            }
+        }
+    </script>
+</body>
+
+</html>
