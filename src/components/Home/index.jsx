@@ -20,7 +20,7 @@ function Home() {
         <PrinmaryButton link={'https://reactjs.org/'} text={"Learn more about React here"} external={false}/>
       </span>
       
-      <div className="cards">
+      <div className="cards text-center">
         {
           repos.map((repo)=>{
             return <RepoCard key={repo.id} title={repo.title} body={repo.body} btnLink={repo.redirectTo} btnText={"Contribute"} />
