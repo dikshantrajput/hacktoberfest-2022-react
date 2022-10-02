@@ -15,14 +15,12 @@ function Contributors() {
   }, [])
   
   return (
-    <div>
-      {
-        repos.map((repo)=>{
-          return <RepoContributors key={repo.id} repo={repo} />
-        })
-      }
+    <div className="contributor__container">
+      {repos.map((repo) => {
+        return <RepoContributors key={repo.id} repo={repo} />;
+      })}
     </div>
-  )
+  );
 }
 
 export default Contributors
