@@ -13,7 +13,7 @@ function Header() {
           Hactoberfest React
         </Link>
       </div>
-      <nav>
+      <nav className="navbar">
         <ul className="header__nav__list mb-0">
           <li
             className={
@@ -53,8 +53,8 @@ function Header() {
       </nav>
       <div className="d-flex flex-row">
         <Mode />
-        {mode && <i class="fa fa-moon-o ms-3">Dark Mode</i>}
-        {mode || <span className="ms-3">Light Mode</span>}
+        {mode && <span class='fa fa-moon-o ms-3'>Dark Mode</span>}
+        {mode || <span className = "ms-3">Light Mode</span>}
       </div>
     </header>
   );
