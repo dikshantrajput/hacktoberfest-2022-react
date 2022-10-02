@@ -1,6 +1,11 @@
 import axios from "axios"
 
 export const getData = async (url,options)=>{
-  const results = await axios.get(url,options)
-  return results.data
+  try{
+    const results = await axios.get(url,options)
+    return results.data;
+
+  } catch(err) {
+    throw new Error(err.message);
+  }
 }
