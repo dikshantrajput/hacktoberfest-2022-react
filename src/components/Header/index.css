@@ -3,7 +3,6 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-
   margin-bottom: 1rem;
 }
 .header__dark {
@@ -48,4 +47,38 @@ header nav {
 .brand__container a:hover,
 .header__nav__list__item a:hover {
   color: var(--cyan-color);
+}
+
+@media (max-width: 767.98px) {
+  header {
+    position: relative;
+    margin-bottom: 45px;
+  }
+
+  .navbar {
+    position: absolute;
+    left: 0;
+    bottom: -45px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+  }
+  .navbar ul {
+    padding: 0;
+  }
+
+  .navbar li a {
+    padding: 0 5px;
+    font-size: 0.9em;
+  }
+
+  .header__nav__list {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 350px) {
+  .navbar li a {
+    font-size: 0.75em;
+  }
 }
