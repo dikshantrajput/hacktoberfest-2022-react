@@ -1,5 +1,7 @@
 .primary__button {
-  background: var(--secondary-color);
+  /* background: var(--secondary-color); */
+  background: #002B5B;
+  font-weight: 600;
   border: 1px solid var(--secondary-color);
   padding: 0.30rem;
   border-radius: 4px;
@@ -12,11 +14,12 @@
 }
 
 .primary__button:hover {
-  background: var(--cyan-color);
+  /* background: var(--cyan-color); */
   cursor: pointer;
   transition: all 0.2s;
 }
 
 .primary__button:hover a {
-  color: var(--black-color);
+  /* color: var(--black-color); */
+  color: #8FE3CF;
 }
