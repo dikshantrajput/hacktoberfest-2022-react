@@ -51,7 +51,7 @@ function Header() {
       </nav>
       <div>
         <Mode />
-        {mode && <i class='fa fa-moon-o'>Dark Mode</i>}
+        {mode && <i className='fa fa-moon-o'>Dark Mode</i>}
         {mode || <span>Light Mode</span>}
       </div>
     </header>
