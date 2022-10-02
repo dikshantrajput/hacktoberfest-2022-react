@@ -11,7 +11,7 @@ function Header() {
       <div className={mode ? "brand__container" : "brand__container__light"}>
         <Link to="/" className="fw-semibold">Hactoberfest React</Link>
       </div>
-      <nav>
+      <nav className="navbar">
         <ul className="header__nav__list mb-0">
           <li
             className={
