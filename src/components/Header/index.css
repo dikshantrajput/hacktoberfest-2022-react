@@ -55,16 +55,27 @@ header nav{
   .navbar {
     position: absolute;
     left: 0;
-    top: 70px;
+    bottom: -45px;
     width: 100%;
     border-bottom: 1px solid #CCC;
+    overflow: hidden;
+  }
+  .navbar ul {
+    padding: 0;
   }
 
-  .navbar a {
+  .navbar li a {
+    padding: 0 5px;
     font-size: 0.9em;
   }
 
   .header__nav__list {
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 350px) {
+  .navbar li a {
+    font-size: 0.75em;
   }
 }
