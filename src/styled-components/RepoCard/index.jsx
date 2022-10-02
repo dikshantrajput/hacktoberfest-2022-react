@@ -8,9 +8,9 @@ function RepoCard({title, body, btnText, btnLink}) {
     <>
       <div className='card__container'>
         <Link to='/contributors' className='repo__card__link'>
-          <div className="card__header">
+          <h2 className="card__header">
             {title}
-          </div>
+          </h2>
         </Link>
         <div className="card__body">
           {body}
