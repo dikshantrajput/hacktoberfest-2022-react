@@ -13,6 +13,8 @@
 
 .primary__button:hover{
   background: var(--cyan-color);
+  cursor: pointer;
+  transition: all 0.2s;
 }
 
 .primary__button:hover a{
