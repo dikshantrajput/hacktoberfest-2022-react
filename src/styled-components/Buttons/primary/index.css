@@ -1,16 +1,15 @@
 .primary__button {
   /* background: var(--secondary-color); */
-  background: #002B5B;
+  background: #002b5b;
   font-weight: 600;
   border: 1px solid var(--secondary-color);
-  padding: 0.30rem 0.3rem;
+  padding: 0.3rem 1.3rem;
   border-radius: 4px;
 }
 
 .primary__button a {
   color: var(--white-color);
   font-size: 1.2rem;
-  margin: 10%;
 }
 
 .primary__button:hover {
@@ -21,5 +20,5 @@
 
 .primary__button:hover a {
   /* color: var(--black-color); */
-  color: #8FE3CF;
+  color: #8fe3cf;
 }

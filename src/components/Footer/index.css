@@ -1,16 +1,16 @@
-footer{
+footer {
   padding: 1rem;
   margin-top: 1rem;
 }
-.footer__light{
+.footer__light {
   box-shadow: 0px -3px 7px 0px #355764;
   /* Added Font-Weight */
   font-weight: 600;
 }
-.footer__dark{
+.footer__dark {
   box-shadow: 0px -2px 5px 0px var(--shadow-color);
 }
-a {
+.footer-a {
   color: #34c0eb;
   padding-right: 20px;
 }
