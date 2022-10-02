@@ -8,6 +8,7 @@
 .primary__button a{
   color: var(--white-color);
   font-size: 1.03rem;
+  margin-left: 9%;
 }
 
 .primary__button:hover{

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import PrinmaryButton from '../Buttons/primary'
+import PrimaryButton from '../Buttons/primary'
 import './index.css'
 import { useSelector } from "react-redux";
 
@@ -17,7 +17,7 @@ function RepoCard({title, body, btnText, btnLink}) {
           <div className="card__header">{title}</div>
         </Link>
         <div className={mode?"card__body":"card__body__light"}>{body}</div>
-        <PrinmaryButton link={btnLink} text={btnText} external={true} />
+        <PrimaryButton link={btnLink} text={btnText} external={true} />
       </div>
     </>
   );
