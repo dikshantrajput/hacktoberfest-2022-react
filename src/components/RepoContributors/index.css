@@ -1,6 +1,7 @@
 .repo__name{
   margin-bottom: 1rem;
   text-transform: capitalize;
+  color: aqua;
 }
 
 .load__more__container{
