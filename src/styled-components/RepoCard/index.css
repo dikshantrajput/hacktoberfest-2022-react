@@ -18,3 +18,17 @@
 .repo__card__link{
   color:var(--white-color)
 }
+
+.card__body__light{
+  color:var(--black-color);
+  margin-bottom: 0.6rem;
+
+}
+.repo__card__link_light{
+  color:var(--black-color)
+}
+.card__container__light{
+  padding: 1rem;
+  box-shadow: 0px 4px 8px 0px var(--black-color);
+  margin-bottom: 1rem;
+}

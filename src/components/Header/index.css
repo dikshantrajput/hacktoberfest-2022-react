@@ -3,14 +3,24 @@ header{
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-  box-shadow: 0px 2px 4px 0px var(--shadow-color);
+  
   margin-bottom: 1rem;
 }
-
+.header__dark{
+box-shadow: 0px 2px 4px 0px var(--shadow-color);
+}
+.header__light{
+  box-shadow: 0px 2px 4px 0px var(--black-color);
+}
 .brand__container a, .header__nav__list__item a{
   color: var(--white-color);
   font-size: 1.1rem;
 }
+.brand__container__light a, .header__nav__list__item__light a{
+  color: var(--black-color);
+  font-size: 1.1rem;
+}
+
 
 header nav{
   flex: 0.5;
