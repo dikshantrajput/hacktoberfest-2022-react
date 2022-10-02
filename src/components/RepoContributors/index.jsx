@@ -8,18 +8,21 @@ function RepoContributors({repo}) {
   const [pageNo, setPageNo] = useState(1)
   const [contributors, setContributors] = useState([])
   const [loadMore, setLoadMore] = useState(true)
+  let lenght_of_contributors = 0;
 
   const getAllContributorsOfRepo = async (userName,repoName,page)=>{
     let options = {}
     let url = `https://api.github.com/repos/${userName}/${repoName}/contributors?per_page=10&page=${page}`
     const repoContributos = await getData(url,options)
     if(repoContributos.length === 0) return setLoadMore(false)
+    lenght_of_contributors = repoContributos.length;
     setContributors(repoContributos)
   }
 
   const loadMoreContributors = ()=>{
     setPageNo((prev)=>prev+1)
     getAllContributorsOfRepo(repo?.username, repo?.reponame,pageNo)
+
   }
 
   useEffect(() => {
@@ -36,11 +39,11 @@ function RepoContributors({repo}) {
           return <ContributorCard key={contributor.id} contributor={contributor} />
         })
       }
-      {
+      {lenght_of_contributors >= 10 ? (
         loadMore && <div className='load__more__container'>
           <SecondaryButton text={"Load More"} clickEvent={loadMoreContributors} />
         </div>
-      }
+      ):null}
     </div>
   )
 }
