@@ -13,8 +13,10 @@ function RepoContributors({repo}) {
     let options = {}
     let url = `https://api.github.com/repos/${userName}/${repoName}/contributors?per_page=10&page=${page}`
     const repoContributos = await getData(url,options)
-    if(repoContributos.length === 0) return setLoadMore(false)
     setContributors(repoContributos)
+    if(repoContributos.length <10) {
+    return setLoadMore(false)
+    }
   }
 
   const loadMoreContributors = ()=>{
@@ -28,21 +30,24 @@ function RepoContributors({repo}) {
   
   return (
     <div>
-      <h2 className='repo__name'>
-        {repo?.reponame}
-      </h2>
-      {
-        contributors.map((contributor)=>{
-          return <ContributorCard key={contributor.id} contributor={contributor} />
-        })
-      }
-      {
-        loadMore && <div className='load__more__container'>
-          <SecondaryButton text={"Load More"} clickEvent={loadMoreContributors} />
+      <h2 className="repo__name">{repo?.reponame}</h2>
+      <div className="contributor__container">
+        {contributors.map((contributor) => {
+          return (
+            <ContributorCard key={contributor.id} contributor={contributor} />
+          );
+        })}
+      </div>
+      {loadMore && (
+        <div className="load__more__container">
+          <SecondaryButton
+            text={'Load More'}
+            clickEvent={loadMoreContributors}
+          />
         </div>
-      }
+      )}
     </div>
-  )
+  );
 }
 
 export default RepoContributors
