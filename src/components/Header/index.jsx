@@ -9,10 +9,10 @@ function Header() {
   return (
     <header className={mode ? "header__dark" : "header__light"}>
       <div className={mode ? "brand__container" : "brand__container__light"}>
-        <Link to="/">Hactoberfest React</Link>
+        <Link to="/" className="fw-semibold">Hactoberfest React</Link>
       </div>
       <nav>
-        <ul className="header__nav__list">
+        <ul className="header__nav__list mb-0">
           <li
             className={
               mode
@@ -49,10 +49,10 @@ function Header() {
           </li>
         </ul>
       </nav>
-      <div>
+      <div className="d-flex flex-row">
         <Mode />
-        {mode && <i className='fa fa-moon-o'>Dark Mode</i>}
-        {mode || <span>Light Mode</span>}
+        {mode && <i class='fa fa-moon-o'>Dark Mode</i>}
+        {mode || <span className = "ms-3">Light Mode</span>}
       </div>
     </header>
   );
