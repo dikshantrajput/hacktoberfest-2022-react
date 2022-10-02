@@ -13,8 +13,10 @@ function RepoContributors({repo}) {
     let options = {}
     let url = `https://api.github.com/repos/${userName}/${repoName}/contributors?per_page=10&page=${page}`
     const repoContributos = await getData(url,options)
-    if(repoContributos.length === 0) return setLoadMore(false)
     setContributors(repoContributos)
+    if(repoContributos.length <10) {
+    return setLoadMore(false)
+    }
   }
 
   const loadMoreContributors = ()=>{
