@@ -1,14 +1,14 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './index.css';
-import Mode from '../Mode';
-import { useSelector } from 'react-redux';
+import React from "react";
+import { Link } from "react-router-dom";
+import "./index.css";
+import Mode from "../Mode";
+import { useSelector } from "react-redux";
 function Header() {
   const mode = useSelector((state) => state.mode.value);
 
   return (
-    <header className={mode ? 'header__dark' : 'header__light'}>
-      <div className={mode ? 'brand__container' : 'brand__container__light'}>
+    <header className={mode ? "header__dark" : "header__light"}>
+      <div className={mode ? "brand__container" : "brand__container__light"}>
         <Link to="/" className="fw-semibold">
           Hactoberfest React
         </Link>
@@ -18,8 +18,8 @@ function Header() {
           <li
             className={
               mode
-                ? 'header__nav__list__item'
-                : 'header__nav__list__item__light'
+                ? "header__nav__list__item"
+                : "header__nav__list__item__light"
             }
           >
             <a href="https://hacktoberfest.com/" target="__dk">
@@ -29,8 +29,8 @@ function Header() {
           <li
             className={
               mode
-                ? 'header__nav__list__item'
-                : 'header__nav__list__item__light'
+                ? "header__nav__list__item"
+                : "header__nav__list__item__light"
             }
           >
             <a
@@ -43,8 +43,8 @@ function Header() {
           <li
             className={
               mode
-                ? 'header__nav__list__item'
-                : 'header__nav__list__item__light'
+                ? "header__nav__list__item"
+                : "header__nav__list__item__light"
             }
           >
             <Link to="/contributors">Contributors</Link>
@@ -53,8 +53,8 @@ function Header() {
       </nav>
       <div className="d-flex flex-row">
         <Mode />
-        {mode && <span class='fa fa-moon-o ms-3'>Dark Mode</span>}
-        {mode || <span className = "ms-3">Light Mode</span>}
+        {mode && <span class="fa fa-moon-o ms-3">Dark Mode</span>}
+        {mode || <span className="ms-3">Light Mode</span>}
       </div>
     </header>
   );

@@ -16,6 +16,7 @@ header {
 .header__nav__list__item a {
   color: var(--white-color);
   font-size: 1.1rem;
+  padding-right: 20px;
 }
 .brand__container__light a,
 .header__nav__list__item__light a {
@@ -23,6 +24,7 @@ header {
   font-size: 1.1rem;
   /* Added Font Weight */
   font-weight: 600;
+  padding-right: 20px;
 }
 
 span {
@@ -60,7 +62,7 @@ header nav {
     left: 0;
     bottom: -45px;
     width: 100%;
-    border-bottom: 1px solid #CCC;
+    border-bottom: 1px solid #ccc;
     overflow: hidden;
   }
   .navbar ul {
