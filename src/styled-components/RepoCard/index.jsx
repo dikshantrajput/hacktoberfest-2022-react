@@ -9,14 +9,14 @@ function RepoCard({title, body, btnText, btnLink}) {
 
   return (
     <>
-      <div className={mode ? "card__container" : "card__container__light"}>
+      <div className={mode ? "card__container__light" : "card__container"}>
         <Link
           to="/contributors"
-          className={mode ? "repo__card__link" : "repo__card__link_light"}
+          className={mode ? "repo__card__link_light" : "repo__card__link"}
         >
           <div className="card__header">{title}</div>
         </Link>
-        <div className={mode?"card__body":"card__body__light"}>{body}</div>
+        <div className={mode?"card__body__light":"card__body"}>{body}</div>
         <PrimaryButton link={btnLink} text={btnText} external={true} />
       </div>
     </>

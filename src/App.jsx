@@ -12,7 +12,7 @@ function App() {
   const mode = useSelector((state) => state.mode.value);
   console.log(mode);
   return (
-    <div className={mode ? "app__container" : "app_container_light"}>
+    <div className={mode ? "app_container_light" : "app_container"}>
       <div className="body__container">
         <Header />
         <div className="container">

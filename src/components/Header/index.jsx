@@ -7,8 +7,8 @@ function Header() {
     const mode = useSelector((state) => state.mode.value);
 
   return (
-    <header className={mode ? "header__dark" : "header__light"}>
-      <div className={mode ? "brand__container" : "brand__container__light"}>
+    <header className={mode ? "header__light" : "header__dark"}>
+      <div className={mode ? "brand__container__light" : "brand__container"}>
         <Link to="/">Hactoberfest React</Link>
       </div>
       <nav>
@@ -16,8 +16,8 @@ function Header() {
           <li
             className={
               mode
-                ? "header__nav__list__item"
-                : "header__nav__list__item__light"
+                ? "header__nav__list__item__light"
+                : "header__nav__list__item"
             }
           >
             <a href="https://hacktoberfest.com/" target="__dk">
@@ -27,8 +27,8 @@ function Header() {
           <li
             className={
               mode
-                ? "header__nav__list__item"
-                : "header__nav__list__item__light"
+                ? "header__nav__list__item__light"
+                : "header__nav__list__item"
             }
           >
             <a
@@ -41,8 +41,8 @@ function Header() {
           <li
             className={
               mode
-                ? "header__nav__list__item"
-                : "header__nav__list__item__light"
+                ? "header__nav__list__item__light"
+                : "header__nav__list__item"
             }
           >
             <Link to="/contributors">Contributors</Link>
@@ -51,8 +51,8 @@ function Header() {
       </nav>
       <div>
         <Mode />
-        {mode && <i class='fa fa-moon-o'>Dark Mode</i>}
-        {mode || <span>Light Mode</span>}
+        {mode && <i class='fa fa-moon-o'>Light Mode</i>}
+        {mode || <span>Dark Mode</span>}
       </div>
     </header>
   );
