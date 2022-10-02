@@ -38,3 +38,12 @@
    margin: 1% 0;
    
 }
+
+.card__container__light{
+  flex: 0 0 32%;
+  margin: 0.5% ;
+  padding: 1rem;
+  /* box-shadow: 1px 2px 7px 0.5px var(--black-color); */
+  box-shadow: 2px 4px 10px 0.5px #707274;
+  margin-bottom: 1rem;
+}
