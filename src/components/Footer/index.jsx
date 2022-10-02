@@ -6,7 +6,7 @@ function Footer() {
   const mode = useSelector((state) => state.mode.value);
 
   return (
-    <footer className={mode ? "footer__dark" : "footer__light"}>
+    <footer className={mode ? "footer__dark text-center" : "footer__light text-center"}>
       <a href="https://hacktoberfest.com/" target="_blank">
         HacktoberFest Official Website{" "}
       </a>
