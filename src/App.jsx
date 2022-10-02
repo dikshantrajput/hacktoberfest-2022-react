@@ -8,7 +8,6 @@ import Container from "./styled-components/Container";
 
 function App() {
   return (
-    // <div className="app__container">
       <Container>
         <Header />
         <Routes>
@@ -20,7 +19,6 @@ function App() {
           <Footer />
         </div>
       </Container>
-    // </div>
   );
 }
 
