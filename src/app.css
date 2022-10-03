@@ -4,7 +4,11 @@
   min-height: 100vh;
   justify-content: space-between;
 }
-
+@media only screen and (max-width: 600px) {
+ .app__container{
+    min-height: 95vh;
+  }
+}
 .body__container > div{
   padding: 1rem;
 }
