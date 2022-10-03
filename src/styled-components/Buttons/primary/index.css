@@ -1,25 +1,28 @@
 .primary__button {
-  /* background: var(--secondary-color); */
-  background: #002B5B;
-  font-weight: 600;
-  border: 1px solid var(--secondary-color);
-  padding: 0.30rem 0.3rem;
-  border-radius: 4px;
+    /* background: var(--secondary-color); */
+    background: #002b5b;
+    font-weight: 600;
+    border: 1px solid var(--secondary-color);
+    padding: 0.5rem;
+    border-radius: 4px;
+    width: fit-content;
+    max-width: 100%;
+    word-wrap: break-word;
+    margin: 0 auto;
+    font-size: 1.2rem;
 }
 
 .primary__button a {
-  color: var(--white-color);
-  font-size: 1.2rem;
-  margin: 10%;
+    color: var(--white-color);
 }
 
 .primary__button:hover {
-  /* background: var(--cyan-color); */
-  cursor: pointer;
-  transition: all 0.2s;
+    /* background: var(--cyan-color); */
+    cursor: pointer;
+    transition: all 0.2s;
 }
 
 .primary__button:hover a {
-  /* color: var(--black-color); */
-  color: #8FE3CF;
+    /* color: var(--black-color); */
+    color: #8fe3cf;
 }
