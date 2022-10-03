@@ -59,6 +59,12 @@ header nav {
     padding: 0;
 }
 
+.dark-light-mode {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media (max-width: 767.98px) {
     header {
         position: relative;
