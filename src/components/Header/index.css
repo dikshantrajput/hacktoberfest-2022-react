@@ -4,6 +4,7 @@ header {
     justify-content: space-between;
     padding: 1rem;
     margin-bottom: 1rem;
+    flex-wrap: wrap;
 }
 .header__dark {
     box-shadow: 0px 2px 4px 0px var(--shadow-color);
