@@ -9,7 +9,7 @@ function Header() {
   return (
     <header className={mode ? "header__dark" : "header__light"}>
       <div className={mode ? "brand__container" : "brand__container__light"}>
-        <Link to="/" className="fw-semibold">Hactoberfest React</Link>
+        <Link to="/" className="fw-semibold">Hacktoberfest React</Link>
       </div>
       <nav className="navbar">
         <ul className="header__nav__list mb-0">
