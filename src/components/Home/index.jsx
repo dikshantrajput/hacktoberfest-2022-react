@@ -3,7 +3,6 @@ import Repos from '../../repos.json'
 import './index.css'
 import RepoCard from '../../styled-components/RepoCard'
 import PrinmaryButton from '../../styled-components/Buttons/primary'
-
 function Home() {
   const [repos,setRepos] = useState([])
   
@@ -14,12 +13,15 @@ function Home() {
   }, [])
   
   return (
-    <div>
+    <div className='home__container'>
+      <div className="home__content">
+      <span style={{width:'80%'}}>
       Contribute now on any one of these and get your profile listed in the contributors section
-      <span style={{float:'right'}}>
+      </span>
+      <span>
         <PrinmaryButton link={'https://reactjs.org/'} text={"Learn more about React here"} external={false}/>
       </span>
-      
+      </div>
       <div className="cards text-center">
         {
           repos.map((repo)=>{

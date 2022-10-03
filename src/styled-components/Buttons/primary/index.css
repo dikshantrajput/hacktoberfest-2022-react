@@ -9,8 +9,10 @@
 
 .primary__button a {
   color: var(--white-color);
-  font-size: 1.2rem;
-  margin: 10%;
+  font-size: 1rem;
+  /* margin: 10%; */
+  padding: 5px!important;
+  text-align: center;
 }
 
 .primary__button:hover {

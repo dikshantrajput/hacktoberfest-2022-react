@@ -7,3 +7,21 @@
 .cards {
   margin: 3.5rem 0;
 }
+.home__container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 1rem;
+}
+.home__content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  max-width: 1200px;
+  padding-top: 32px;
+  /* padding: 8rem 0; */
+}
