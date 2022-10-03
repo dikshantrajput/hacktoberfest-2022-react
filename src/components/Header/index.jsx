@@ -49,7 +49,7 @@ function Header() {
           </li>
         </ul>
       </nav>
-      <div className="d-flex flex-row">
+      <div className="d-flex flex-row justify-content-center align-items-center">
         <Mode />
         {mode && <span class='fa fa-moon-o ms-3'>Dark Mode</span>}
         {mode || <span className = "ms-3">Light Mode</span>}

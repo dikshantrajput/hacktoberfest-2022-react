@@ -3,7 +3,6 @@ import Repos from '../../repos.json'
 import './index.css'
 import RepoCard from '../../styled-components/RepoCard'
 import PrinmaryButton from '../../styled-components/Buttons/primary'
-import img from './hacktoberfest.png'
 function Home() {
   const [repos,setRepos] = useState([])
   
@@ -15,9 +14,6 @@ function Home() {
   
   return (
     <div className='home__container'>
-      <div className="home__image">
-        <img src={img} alt="Hacktoberfest" width={1080} height={500}/>
-      </div>
       <div className="home__content">
       <span style={{width:'80%'}}>
       Contribute now on any one of these and get your profile listed in the contributors section
