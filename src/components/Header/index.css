@@ -41,6 +41,12 @@ header nav {
 
 .header__nav__list__item a {
     font-size: 0.9rem;
+    padding: 0 10px;
+}
+
+.brand__container a {
+    padding: 0;
+    margin: 0 1rem;
 }
 
 .brand__container a:hover,
@@ -65,28 +71,30 @@ header nav {
     justify-content: center;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 742px) {
     header {
-        position: relative;
-        margin-bottom: 45px;
+        justify-content: center;
     }
 
     .navbar {
-        position: absolute;
-        left: 0;
-        bottom: -45px;
         width: 100%;
-        border-bottom: 1px solid #ccc;
-        overflow: hidden;
+        order: 1;
+        margin: 0 auto;
+        padding-top: 1rem;
     }
 
     .navbar li a {
-        padding: 0 5px;
         font-size: 0.9em;
     }
 
     .header__nav__list {
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 411px) {
+    .dark-light-mode {
+        margin-top: 1rem;
     }
 }
 
