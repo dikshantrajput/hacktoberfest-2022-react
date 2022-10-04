@@ -39,7 +39,8 @@ header nav{
 }
 
 .header__nav__list__item a{
-  font-size: 0.9rem;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .brand__container a:hover, .header__nav__list__item a:hover{

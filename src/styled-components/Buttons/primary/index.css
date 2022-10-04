@@ -10,7 +10,7 @@
 .primary__button a {
   color: var(--white-color);
   font-size: 1.2rem;
-  margin: 10%;
+  padding: 10px;
 }
 
 .primary__button:hover {
