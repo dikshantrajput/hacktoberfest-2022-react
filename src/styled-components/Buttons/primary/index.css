@@ -15,7 +15,10 @@
 .primary__button:hover {
   /* background: var(--cyan-color); */
   cursor: pointer;
+  transform: translateX(-2px) translateY(-2px);
   transition: all 0.2s;
+  box-shadow: 4px 4px 5px #0071fc59;
+  border: none;
 }
 
 .primary__button:hover a {
