@@ -1,5 +1,5 @@
 import React from 'react'
-import PrinmaryButton from '../Buttons/primary'
+import PrimaryButton from '../Buttons/primary'
 import './index.css'
 
 function ContributorCard({contributor}) {
@@ -14,7 +14,7 @@ function ContributorCard({contributor}) {
           {login}
         </div>
         <div className="repo__card__btn">
-          <PrinmaryButton link={html_url} text={"Profile"} external={true} />
+          <PrimaryButton link={html_url} text={"Profile"} external={true} />
         </div>
       </div>
     </div>
