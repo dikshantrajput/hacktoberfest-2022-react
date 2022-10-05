@@ -17,7 +17,7 @@
   cursor: pointer;
   transform: translateX(-2px) translateY(-2px);
   transition: all 0.2s;
-  box-shadow: 4px 4px 5px #0071fc59;
+  box-shadow: 4px 4px 6px #0071fc59;
   border: none;
 }
 
