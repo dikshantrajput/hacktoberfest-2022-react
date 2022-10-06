@@ -51,6 +51,17 @@ header nav {
   color: var(--cyan-color);
 }
 
+.brand__container__light a:hover,
+.header__nav__list__item__light a:hover {
+  color: var(--cyan-dark-color);
+}
+.fa-moon-o:hover{
+  color: var(--cyan-color);
+}
+.fa-light:hover{
+  color:var(--cyan-dark-color);
+}
+
 @media (max-width: 767.98px) {
   header {
     position: relative;
