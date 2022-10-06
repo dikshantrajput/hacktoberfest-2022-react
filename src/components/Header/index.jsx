@@ -54,7 +54,7 @@ function Header() {
       <div className="d-flex flex-row">
         <Mode />
         {mode && <span class="fa fa-moon-o ms-3">Dark Mode</span>}
-        {mode || <span className="ms-3">Light Mode</span>}
+        {mode || <span className="fa-light ms-3">Light Mode</span>}
       </div>
     </header>
   );

@@ -55,10 +55,10 @@ header nav {
 .header__nav__list__item__light a:hover {
   color: var(--cyan-dark-color);
 }
-.fa:hover{
+.fa-moon-o:hover{
   color: var(--cyan-color);
 }
-.ms-3:hover{
+.fa-light:hover{
   color:var(--cyan-dark-color);
 }
 
