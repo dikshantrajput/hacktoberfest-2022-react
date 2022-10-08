@@ -34,7 +34,19 @@
 }
 
 .card__container{
-   flex: 0 0 32%;
-   margin: 1% 0;
-   
+   /* flex: 0 0 32%; */
+   margin: 10px;
+    min-width: 29%;
+}
+
+@media screen and (max-width: 995px) {
+  .card__container{
+    min-width: 47%;
+  }
+}
+@media screen and (max-width: 747px) {
+  .card__container{
+    min-width: 90%;
+    margin: 10px 25px;
+  }
 }
