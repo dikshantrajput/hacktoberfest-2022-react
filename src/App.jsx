@@ -10,7 +10,6 @@ import './app.css';
 import { useSelector } from 'react-redux'
 function App() {
   const mode = useSelector((state) => state.mode.value);
-  console.log(mode);
   return (
     <div className={mode ? "app__container" : "app_container_light"}>
       <div className="body__container">
