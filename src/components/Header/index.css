@@ -10,6 +10,7 @@ header {
 }
 .header__light {
   /* box-shadow: 0px 2px 4px 0px var(--black-color); */
+  background-color: rgb(211, 211, 213);
   box-shadow: 0px 3px 7px 0px #355764;
 }
 .brand__container a,
