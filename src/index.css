@@ -32,9 +32,10 @@ body {
   --primary-color: #170f1e;
   --secondary-color:rgb(124, 127, 255);
   --cyan-color:rgb(64, 221, 255);
-  --white-color:rgb(229, 225, 230);
+  --white-color:rgb(226, 225, 230);
   --white-light-color:rgba(229, 225, 230,0.7);
   --black-color:#000000;
-  --shadow-color:rgba(255,255,255,0.2)
+  --shadow-color:rgba(255,255,255,0.2);
+  --hover:rgb(119, 232, 250);
 }
 

@@ -5,17 +5,21 @@
   border: 1px solid var(--secondary-color);
   padding: 0.3rem 1.3rem;
   border-radius: 4px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.primary__button:hover,
+.primary__button:focus {
+  -webkit-box-shadow: 0 0.4em 0.5em -0.4em var(--hover);
+          box-shadow: 0 0.4em 0.5em -0.4em var(--hover);
+  -webkit-transform: translateY(-0.08em);
+          transform: translateY(-0.08em);
 }
 
 .primary__button a {
   color: var(--white-color);
   font-size: 1.2rem;
-}
-
-.primary__button:hover {
-  /* background: var(--cyan-color); */
-  cursor: pointer;
-  transition: all 0.2s;
 }
 
 .primary__button:hover a {
