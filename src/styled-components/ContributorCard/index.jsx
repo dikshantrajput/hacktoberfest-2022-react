@@ -1,11 +1,12 @@
 import React from 'react'
 import PrinmaryButton from '../Buttons/primary'
 import './index.css'
-
+import { useSelector } from 'react-redux'
 function ContributorCard({contributor}) {
   const {login, avatar_url, html_url } = contributor
+  const mode = useSelector((state) => state.mode.value);
   return (
-    <div className='card__container'>
+    <div className={mode ? "card__container" : "card__container__ligth"}>
       <div className="repo__card__header">
         <div className="repo__card__user__profile">
           <div className="avatar__container">
