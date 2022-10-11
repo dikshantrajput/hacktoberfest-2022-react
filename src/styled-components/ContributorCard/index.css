@@ -36,5 +36,13 @@
 .card__container{
    flex: 0 0 32%;
    margin: 1% 0;
-   
+   background-color: #2d1d3a;
+    padding: 1rem;
+}
+
+.card__container__ligth{
+  flex: 0 0 32%;
+  margin: 1% 0;
+  background-color: #cfadeb;
+  padding: 1rem;
 }
