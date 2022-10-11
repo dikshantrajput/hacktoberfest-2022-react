@@ -1,10 +1,12 @@
 import React from 'react';
 import './index.css';
-import { useSelector } from 'react-redux';
+
+import {selectMode} from "../../helpers/selector";
+import {useSelector} from "react-redux";
 
 function Footer() {
-  const mode = useSelector((state) => state.mode.value);
 
+ const mode = useSelector(selectMode)
   return (
     <footer
       className={

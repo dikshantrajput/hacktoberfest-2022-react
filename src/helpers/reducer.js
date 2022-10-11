@@ -10,4 +10,6 @@ import { createSlice } from '@reduxjs/toolkit';
  });
 
 export const {switchMode} = modeReducer.actions;
+
+
 export default modeReducer.reducer;

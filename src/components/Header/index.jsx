@@ -2,10 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./index.css";
 import Mode from "../Mode";
-import { useSelector } from "react-redux";
+import {selectMode} from "../../helpers/selector";
+import {useSelector} from "react-redux";
 function Header() {
-  const mode = useSelector((state) => state.mode.value);
 
+    const mode = useSelector(selectMode);
   return (
     <header className={mode ? "header__dark" : "header__light"}>
       <div className={mode ? "brand__container" : "brand__container__light"}>

@@ -4,13 +4,17 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import {useSelector} from "react-redux";
 import Home from "./components/Home";
 import Contributors from "./components/Contributors";
 import './app.css';
-import { useSelector } from 'react-redux'
+import {selectMode} from "./helpers/selector";
+
+
 function App() {
-  const mode = useSelector((state) => state.mode.value);
-  console.log(mode);
+
+    const mode = useSelector(selectMode)
+
   return (
     <div className={mode ? "app__container" : "app_container_light"}>
       <div className="body__container">
